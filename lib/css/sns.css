@@ -1,0 +1,111 @@
+.sns-header, .sns-footer {
+padding: 0px;
+}
+
+.sns-area {
+padding: 0;
+overflow: hidden;
+table-layout: fixed;
+display: table;
+width: 100%;
+}
+
+.sns-area li {
+list-style-type: none;
+display: table-cell;
+vertical-align: middle;
+
+}
+
+.sns-area li:last-child {
+margin-right: 0
+}
+
+.sns-link {
+position: relative;
+display: block;
+color: #fff!important;
+text-align: center;
+text-decoration: none;
+outline: none;
+overflow: hidden;
+height: 42px;
+line-height: 42px;
+}
+
+.sns-link::after {
+　　position: absolute;
+　　top: 50%;
+　　left: 50%;
+　　z-index: 2;
+　　display: block;
+　　content: '';
+　　width: 0;
+　　height: 0;
+　　background-color: rgba(255,255,255,.3);
+　　border-radius: 50%;
+　　-webkit-transform: translate(-50%, -50%);
+　　transform: translate(-50%, -50%);
+　　opacity: 0;
+	color:#fff;
+}
+
+
+.sns-link:hover {
+text-decoration: none;
+opacity: 0.8;
+color:#fff;
+}
+
+
+.sns-twitter {
+background: #55ACEE;
+}
+
+.sns-facebook {
+background: #16528e;
+}
+
+.sns-bookmark {
+background: #0082c8;
+}
+
+.sns-pocket {
+background: #EE4056;
+}
+
+.sns-feedly {
+background: #2BB24C;
+}
+
+.icon-twitter,
+.icon-facebook,
+.icon-hatebu,
+.icon-pocket,
+.icon-feedly {
+margin-right: 5px;
+font-size: 170%;
+top: 5px;
+position: relative;
+}
+
+@media only screen and (max-width: 767px) {
+.sns-txt {
+   display: none;
+}
+.icon-twitter,
+.icon-facebook,
+.icon-hatebu,
+.icon-pocket,
+.icon-feedly {
+   margin-right: 0;
+}
+}
+
+.sns-footer {
+margin-top: 10px;
+}
+
+.sns-txt {
+display:none;
+}
