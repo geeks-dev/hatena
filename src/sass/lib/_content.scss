@@ -1,0 +1,115 @@
+.entry-content {
+	line-height: 1.85;
+	padding-bottom: 1em;
+	font-size: 1.1rem;
+	letter-spacing: 0.3px;
+	p {
+		margin-bottom: 1em;
+	}
+	img {
+		max-width: 100%;
+		border-radius: 3px;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		-webkit-transition: all 0.2s ease-in-out;
+		-moz-transition: all 0.2s ease-in-out;
+		-o-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+		&:hover {
+			opacity: 0.9;
+			-moz-transform: scale(0.98);
+			-webkit-transform: scale(0.98);
+			-transform: scale(0.98);
+			background-color: #fff;
+		}
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		margin: 1.3em 0 0.8em;
+		line-height: 1.5;
+	}
+	h1 {
+		font-size: 1.6em;
+	}
+	h2 {
+		font-size: 1.5em;
+	}
+	h3 {
+		font-size: 1.4em;
+	}
+	h4 {
+		font-size: 1.3em;
+	}
+	h5 {
+		font-size: 1.2em;
+	}
+	h6 {
+		font-size: 1em;
+	}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+		margin-bottom: 1em;
+		img {
+			max-width: none;
+		}
+		td,
+		th {
+			border: 1px solid #ddd;
+			padding: 5px 10px;
+		}
+		th {
+			background: #f5f5f5;
+		}
+	}
+	blockquote {
+		border: 1px solid #e0e0e0;
+		margin: 0 0 10px;
+		padding: 20px;
+		p {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+	}
+	pre {
+		border: 1px solid #1a1a1a;
+		margin: 0 0 10px;
+		padding: 20px;
+		white-space: pre;
+		background-color: #333;
+		color: #00F3FF;
+		font-family: 'Source Han Code JP', 'Monaco', 'Consolas', 'Courier New', Courier, monospace, sans-serif;
+		font-weight: 500;
+		> code {
+			margin: 0;
+			padding: 0;
+			white-space: pre;
+			border: 0;
+			background: transparent;
+			font-family: 'Source Han Code JP', 'Monaco', 'Consolas', 'Courier New', Courier, monospace, sans-serif;
+			font-weight: 500;
+		}
+	}
+	code {
+		padding: 0.1em 0.7em;
+		border: 1px solid #eee;
+		background-color: #fff;
+		border-radius: 3px;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		font-family: 'Source Han Code JP', 'Monaco', 'Consolas', 'Courier New', Courier, monospace, sans-serif;
+		font-weight: 500;
+	}
+	:not(pre) code {
+		border: 1px solid #B400B7;
+		background-color: #fff;
+		color: #B400B7;
+	}
+	.hatena-asin-detail li {
+		line-height: 1.4;
+	}
+}

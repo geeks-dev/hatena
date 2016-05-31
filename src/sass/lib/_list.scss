@@ -1,0 +1,29 @@
+body.page-index {
+	article {
+		.entry-inner {
+			padding-bottom: 24px;
+		}
+		.entry-header {
+			.entry-categories{
+				position: static;
+			}
+		}
+		.entry-content {
+			p {
+				margin:0;
+			}
+			img:first-child {
+				max-width: 300px;
+				float: left;
+				margin-right: 24px;
+			}
+			a.entry-see-more {
+				clear:both;
+				float: left;
+				margin-top: 24px;
+				margin-bottom: 12px;
+			}
+		}
+	}
+}
+

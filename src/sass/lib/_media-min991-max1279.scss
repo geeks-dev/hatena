@@ -1,0 +1,58 @@
+@media (min-width: 991px) and (max-width: 1279px) {
+	#blog-title {
+		display: table-row;
+	}
+	#blog-description,
+	#blog-title-inner {
+		width: 100%;
+	}
+	#box2-inner {
+		margin: 0 auto;
+		width: 100%;
+	}
+	#container #content {
+		border-left: 0 none;
+	}
+	#main {
+		border-left: 84px solid #e7e7e7;
+	}
+	.page-about #main {
+		border-left: 0 none;
+	}
+	.page-archive {
+		#container #content {
+			border-left: 0 none;
+		}
+		#main {
+			border-left: 30px solid #e7e7e7;
+			margin: 0;
+		}
+	}
+	.hatena-module {
+		width: 240px;
+		overflow: hidden;
+		float: left;
+		padding: 0;
+		margin: 0 0 25px 30px;
+	}
+	.hatena-module-title {
+		padding: 25px 0 20px;
+		margin: 0 0 15px;
+		border-top: 0 none;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	}
+	.hatena-module-profile:before {
+		position: static;
+		content: "";
+	}
+	.hatena-module-search-box {
+		margin-top: 25px;
+	}
+	#footer {
+		position: relative;
+		bottom: auto;
+		left: 0;
+		padding: 12px;
+		background-color: rgba(0, 0, 0, 0.48);
+	}
+}
