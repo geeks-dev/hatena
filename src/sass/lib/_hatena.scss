@@ -101,13 +101,17 @@ a {
 	margin-left: 10px;
 	padding-left: 10px;
 	position: fixed;
-	bottom: 164px;
+	top: 225px;
 	background-color: #fff;
+	z-index: 999;
 }
 #scroll-social-btn{
 	ul{
 		padding:0px;
 		list-style: none;
+		li{
+			margin: 8px 0;
+		}
 		.social-btn{
 			display: block;
 			color: #fff!important;
@@ -115,7 +119,7 @@ a {
 			outline: 0;
 			height: 42px;
 			line-height: 42px;
-			cursor:poiner;
+			cursor:pointer;
 		}
 	}
 }

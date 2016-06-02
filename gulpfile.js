@@ -4,8 +4,8 @@ var gulp = require('gulp'),
 	minifyCss = require('gulp-minify-css'),
 	concat = require('gulp-concat'),
 	fs = require('fs')
-	rename = require('gulp-rename');
-
+	rename = require('gulp-rename'),
+	browserify = require('gulp-browserify');
 
 gulp.task('header:js', function() {
 	return gulp.src(['src/js/header/**/*.js'])
@@ -17,10 +17,15 @@ gulp.task('header:js', function() {
 });
 
 gulp.task('footer:js', function() {
-	return gulp.src(['src/js/footer/**/*.js'])
-		.pipe(concat('app.min.js'))
+	return gulp.src(['src/js/footer/app.js'])
+		.pipe(browserify({
+		  insertGlobals : true
+		}))
 		.pipe(uglify({
 			preserveComments: 'some'
+		}))
+		.pipe(rename({
+				extname: '.min.js'
 		}))
 		.pipe(gulp.dest('dist/js'));
 });

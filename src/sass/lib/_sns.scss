@@ -56,22 +56,37 @@
 
 .sns-twitter {
   background: #55ACEE;
+  &:hover{
+	background: #55ACEE!important;
+  }
 }
 
 .sns-facebook {
   background: #16528e;
+  &:hover{
+	background: #16528e!important;
+  }
 }
 
 .sns-bookmark {
   background: #0082c8;
+  &:hover{
+	background: #0082c8!important;
+  }
 }
 
 .sns-pocket {
   background: #EE4056;
+  &:hover{
+	background: #EE4056!important;
+  }
 }
 
 .sns-feedly {
   background: #2BB24C;
+  &:hover{
+	background: #2BB24C!important;
+  }
 }
 
 .icon-twitter, .icon-facebook, .icon-hatebu, .icon-pocket, .icon-feedly {
