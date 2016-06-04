@@ -3,8 +3,18 @@
 @import "lib/hatena.scss";
 @import "lib/content.scss";
 @import "lib/list.scss";
+@import "lib/media-max435.scss";
 @import "lib/media-max990.scss";
 @import "lib/media-min991-max1279.scss";
 @import "lib/sns.scss";
-@import "../../node_modules/material-design-lite/material.min.css";
-// @import "../../node_modules/material-design-lite/src/button/button.scss";
+@import "lib/speedDial.scss";
+// @import "../../node_modules/material-design-lite/material.min.css";
+// @import "../../node_modules/material-design-lite/src/color-definitions.scss";
+// @import "../../node_modules/material-design-lite/src/variables.scss";
+@import "../../node_modules/material-design-lite/src/button/button.scss";
+@import "../../node_modules/material-design-lite/src/ripple/ripple.scss";
+// @import "../../node_modules/material-design-lite/src/layout/layout.scss";
+
+.mdl-button{
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}

@@ -11,7 +11,20 @@ gulp.task('header:js', function() {
 	return gulp.src(['src/js/header/**/*.js'])
 		.pipe(concat('header.min.js'))
 		.pipe(uglify({
-			preserveComments: 'some'
+			preserveComments: 'license'
+		}))
+		.pipe(gulp.dest('dist/js'));
+});
+
+gulp.task('jquery:js', function() {
+	return gulp.src([
+			'node_modules/jquery/dist/jquery.min.js',
+			'node_modules/jquery.transit/jquery.transit.js'
+		])
+		.pipe(concat('jqandpl.min.js'))
+		.pipe(uglify({
+			mangle:false,
+			preserveComments: 'license'
 		}))
 		.pipe(gulp.dest('dist/js'));
 });
@@ -19,10 +32,11 @@ gulp.task('header:js', function() {
 gulp.task('footer:js', function() {
 	return gulp.src(['src/js/footer/app.js'])
 		.pipe(browserify({
-		  insertGlobals : true
+			insertGlobals : true,
+			jquery:'jquery-browserify'
 		}))
 		.pipe(uglify({
-			preserveComments: 'some'
+			preserveComments: 'license'
 		}))
 		.pipe(rename({
 				extname: '.min.js'

@@ -1,0 +1,75 @@
+@media (max-width: 435px) {
+	html {
+		&[data-device="touch"] {
+			.page-index {
+				.entry-list .section {
+					margin-bottom: -45px;
+					display: flex;
+					flex-direction: column-reverse;
+				}
+				.entry-list .section:after {
+					content: " ";
+					display: block;
+					clear: both;
+				}
+				.entry-title {
+					font-size: 0.9rem;
+					width: calc(100% - 90px);
+					line-height: 1.15;
+					position: relative;
+					top: -75px;
+					min-height: 28px;
+				}
+				.entry-body {
+					display: flex;
+					flex-direction: row-reverse;
+					width: auto;
+				}
+				.thumb {
+					display: inline-block;
+				}
+				.entry-content {
+					font-size: .76rem;
+					line-height: 1;
+					top: 35px;
+					position: relative;
+					p {
+						line-height: 1.2;
+						padding-right: 5px;
+					}
+					.entry-footer {
+						text-align: right;
+						display: inline-block;
+						position: absolute;
+						right: 10px;
+						bottom: 10px;
+					}
+				}
+				.date {
+					bottom: 40px;
+					top: inherit;
+					text-align: left;
+					position: relative;
+				}
+			}
+			.hatena-module {
+				float: none;
+			}
+			.hatena-module-title {
+				color: #607D8B;
+				border-bottom: 1px solid #607D8B;
+				font-size: 1.3rem;
+				padding: 25px 0 5px;
+				text-indent: 10px;
+			}
+			.urllist-item-inner {
+				a {
+					font-size: 1.1rem;
+					&.urllist-title-link {
+						color: rgba(55, 67, 72, 0.74);
+					}
+				}
+			}
+		}
+	}
+}

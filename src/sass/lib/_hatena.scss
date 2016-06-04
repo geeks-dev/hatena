@@ -96,33 +96,8 @@ a {
 	padding: 0;
 	vertical-align: top;
 }
-#top-editarea {
-	width: 90px;
-	margin-left: 10px;
-	padding-left: 10px;
-	position: fixed;
-	top: 225px;
-	background-color: #fff;
-	z-index: 999;
-}
-#scroll-social-btn{
-	ul{
-		padding:0px;
-		list-style: none;
-		li{
-			margin: 8px 0;
-		}
-		.social-btn{
-			display: block;
-			color: #fff!important;
-			text-align: center;
-			outline: 0;
-			height: 42px;
-			line-height: 42px;
-			cursor:pointer;
-		}
-	}
-}
+
+
 #content {
 	// display: table-cell;
 	border-left: 84px solid #e7e7e7;

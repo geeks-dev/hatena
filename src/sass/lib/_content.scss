@@ -1,3 +1,6 @@
+.entry-title{
+	font-weight: normal;
+}
 .entry-content {
 	line-height: 1.85;
 	padding-bottom: 1em;
@@ -31,6 +34,7 @@
 	h6 {
 		margin: 1.3em 0 0.8em;
 		line-height: 1.5;
+		font-weight: normal;
 	}
 	h1 {
 		font-size: 1.6em;
@@ -111,5 +115,8 @@
 	}
 	.hatena-asin-detail li {
 		line-height: 1.4;
+	}
+	strong, b{
+		font-family: "Gen Jyu Gothic","ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","HG丸ｺﾞｼｯｸM-PRO",HGMaruGothicMPRO,"モトヤLマルベリ3等幅",MotoyaLMaru,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Meiryo,Arial,'MS PGothic',sans-serif;
 	}
 }

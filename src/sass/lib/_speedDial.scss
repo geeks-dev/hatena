@@ -1,0 +1,77 @@
+/* Speed dial */
+
+.mdl-speed-dial {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	bottom: 16px;
+	right: 16px;
+	-webkit-flex-flow: column-reverse nowrap;
+	-ms-flex-flow: column-reverse nowrap;
+	flex-flow: column-reverse nowrap;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	z-index: 999;
+	position: fixed;
+	.mdl-button--fab:first-child .material-icons:not(:only-child), .mdl-button--mini-fab {
+		transition-duration: 0.2s;
+		transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+		-webkit-transform-origin: center center;
+		transform-origin: center center;
+	}
+	.mdl-button--fab:first-child .material-icons:not(:only-child), .mdl-button--mini-fab {
+		transition-property: -webkit-transform, opacity;
+		transition-property: transform, opacity;
+		will-change: transform, opacity;
+	}
+	&.is-active .mdl-button--fab:first-child .material-icons:first-child, .mdl-button--fab:first-child .material-icons:nth-child(2) {
+		opacity: 0;
+	}
+	&.is-active .mdl-button--fab:first-child .material-icons:first-child {
+		transform: rotate(90deg) translate(-12px, 12px);
+	}
+	.mdl-button--fab:first-child .material-icons:nth-child(2) {
+		transform: rotate(-90deg);
+		top: 16px;
+		left: 16px;
+	}
+	&.is-active .mdl-button--fab:first-child .material-icons:nth-child(2) {
+		opacity: 1;
+		transform: rotate(0deg);
+	}
+	.mdl-button--mini-fab {
+		-webkit-transform: scale(0, 0);
+		transform: scale(0, 0);
+		margin-bottom: 16px;
+		[class*=" icon-"], [class^=icon-]{
+			color: white;
+			font-size: 18px;
+		}
+	}
+	&.is-active .mdl-button--mini-fab {
+		-webkit-transform: scale(1, 1);
+		transform: scale(1, 1);
+	}
+	.mdl-button--mini-fab:nth-of-type(6), &.is-active .mdl-button--mini-fab:nth-of-type(2) {
+		transition-delay: 0s;
+	}
+	.mdl-button--mini-fab:nth-of-type(5), &.is-active .mdl-button--mini-fab:nth-of-type(3) {
+		transition-delay: 50ms;
+	}
+	.mdl-button--mini-fab {
+		&:nth-of-type(4) {
+			transition-delay: 100ms;
+		}
+		&:nth-of-type(3) {
+			transition-delay: 150ms;
+		}
+	}
+	&.is-active .mdl-button--mini-fab:nth-of-type(5) {
+		transition-delay: 150ms;
+	}
+	.mdl-button--mini-fab:nth-of-type(2), &.is-active .mdl-button--mini-fab:nth-of-type(6) {
+		transition-delay: 200ms;
+	}
+}
+
