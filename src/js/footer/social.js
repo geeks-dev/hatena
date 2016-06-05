@@ -233,10 +233,10 @@ function popupPocket(){
 }
 
 $(function() {
-	$('#scroll-social-btn').find('.sns-twitter').bind('click',popupTweet);
-	$('#scroll-social-btn').find('.sns-facebook').bind('click',popupFb);
-	$('#scroll-social-btn').find('.sns-bookmark').bind('click',popupHatebu);
-	$('#scroll-social-btn').find('.sns-pocket').bind('click',popupPocket);
+	$('.sns-twitter').bind('click',popupTweet);
+	$('.sns-facebook').bind('click',popupFb);
+	$('.sns-bookmark').bind('click',popupHatebu);
+	$('.sns-pocket').bind('click',popupPocket);
 })
 
 $(window).load(function() {
