@@ -675,6 +675,9 @@ a {
 .hatena-module-html .hatena-module-title:after {
 	content: '\f02e';
 }
+.hatena-module-html .hatena-module-body{
+	overflow: visible!important;
+}
 .hatena-module-search-box {
 	.hatena-module-title {
 		display: none;

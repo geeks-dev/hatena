@@ -12,7 +12,6 @@ MaterialSpeedDial.upgradeItem = function(item) {
 				item.firstElementChild.addEventListener("touchend", function(e) {
 					item.classList.toggle("is-active");
 				});
-				console.log("touch deviede!!1");
 			}else{
 				item.firstElementChild.addEventListener("mouseenter", function(e) {
 					item.classList.add("is-active");

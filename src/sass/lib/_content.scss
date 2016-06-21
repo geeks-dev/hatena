@@ -6,6 +6,9 @@
 	padding-bottom: 1em;
 	font-size: 1.1rem;
 	letter-spacing: 0.3px;
+	>p:nth-child(1){
+		text-align: center;
+	}
 	p {
 		margin-bottom: 1em;
 	}

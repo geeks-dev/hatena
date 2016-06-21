@@ -1,6 +1,18 @@
 @media (max-width: 435px) {
 	html {
 		&[data-device="touch"] {
+			.hatena-module.profile{
+				display:none;
+			}
+			.footer-menu{
+				display:none!important;
+			}
+			.adsense-wrapper{
+				text-align: center;
+			}
+			.mdl-speed-dial{
+				bottom: 78px;
+			}
 			.page-index {
 				.entry-list .section {
 					margin-bottom: -45px;

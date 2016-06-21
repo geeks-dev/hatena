@@ -1,4 +1,3 @@
-
 // window.jQuery = require('jquery');
 // window.$ = window.jQuery;
 // // transit($);
@@ -11,7 +10,7 @@ require('./speedDial.js');
 require('material-design-lite/src/mdlComponentHandler.js');
 require('material-design-lite/src/button/button.js');
 require('material-design-lite/src/ripple/ripple.js');
-require('material-design-lite/src/ripple/ripple.js');
+require('./adsense.js');
 smoothScroll = require('smooth-scroll/dist/js/smooth-scroll.min.js');
 smoothScroll.init({
     selector: '[data-scroll]',
@@ -23,5 +22,3 @@ smoothScroll.init({
 });
 
 // require('material-design-lite/dist/material.min.js');
-
-

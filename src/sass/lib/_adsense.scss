@@ -1,0 +1,53 @@
+.adsense-wrapper {
+	&.entry-content-top {
+		width: 300px;
+		height: 250px;
+		float:right;
+		margin-left: 15px;
+		margin-bottom: 15px;
+		.adsbygoogle{
+			width: 300px;
+			height: 250px;
+		}
+		@media only screen and (max-width:1450px) and (min-width:1280px) {
+			float:none;
+			width: 100%;
+			margin-left: 0px;
+			.adsbygoogle{
+				margin:0 auto;
+			}
+		}
+		@media only screen and (max-width:1100px) and (min-width:991px) {
+			float:none;
+			width: 100%;
+			margin-left: 0px;
+			.adsbygoogle{
+				margin:0 auto;
+			}
+		}
+		@media only screen and (max-width:540px) {
+			float:none;
+			width: 100%;
+			margin-left: 0px;
+			.adsbygoogle{
+				margin:0 auto;
+			}
+		}
+	}
+	&.entry-content-bottom{
+		width: 100%;
+		height:250px;
+		.adsbygoogle{
+			margin:0 auto;
+			width: 300px;
+			height:250px;
+		}
+	}
+	&.sidebar{
+		margin:0 -20px;
+		.adsbygoogle{
+			margin:0 auto;
+			height:400px;
+		}
+	}
+}
