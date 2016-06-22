@@ -23,7 +23,10 @@
 	ul {
 		@media only screen and (max-width: 990px) {
 			display: flex;
+			display:-ms-flexbox;/*--- IE10 ---*/
+			display: -webkit-flex;/*--- safari（PC）用 ---*/
 			flex-wrap: wrap;
+			-webkit-flex-wrap: wrap;
 			-webkit-justify-content: space-between;
 			justify-content: space-between;
 			li {
