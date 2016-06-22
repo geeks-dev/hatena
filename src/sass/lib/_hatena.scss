@@ -92,6 +92,9 @@ a {
 }
 #blog-title {
 	// display: table-cell;
+	flex-shrink: 1;
+	min-width: 400px;
+	flex-grow: 1;
 	width: 400px;
 	background-color: transparent;
 	background-attachment: fixed !important;
