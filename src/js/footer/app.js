@@ -5,11 +5,13 @@
 // jqueryTransit($);
 require('./social.js');
 require('./scrollSocialArea.js');
-require('./speedDial.js');
+
 
 require('material-design-lite/src/mdlComponentHandler.js');
 require('material-design-lite/src/button/button.js');
 require('material-design-lite/src/ripple/ripple.js');
+require('./speedDial.js');
+
 require('./adsense.js');
 smoothScroll = require('smooth-scroll/dist/js/smooth-scroll.min.js');
 smoothScroll.init({
