@@ -6,7 +6,7 @@ var MaterialSpeedDial = function() {};
 
 // Add mouse event on element
 MaterialSpeedDial.upgradeItem = function(item) {
-	if (item instanceof Element && item.matches(".mdl-speed-dial") !== false) {
+	if (item instanceof Element) {
 		if (item.firstElementChild !== null) {
 			if (('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch) {
 				item.firstElementChild.addEventListener("touchend", function(e) {
