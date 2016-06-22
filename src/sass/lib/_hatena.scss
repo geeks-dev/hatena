@@ -82,12 +82,12 @@ a {
 	width: 100%;
 }
 #container-inner{
+    display: -webkit-flex;/*--- safari（PC）用 ---*/
 	display: flex;
 	display:-ms-flexbox;/*--- IE10 ---*/
-    display: -webkit-flex;/*--- safari（PC）用 ---*/
 	@media only screen and (min-width:991px) and (max-width:1279px) {
-		flex-wrap:wrap;
 		-webkit-flex-wrap:wrap;
+		flex-wrap:wrap;
 	}
 }
 #blog-title {

@@ -16,11 +16,11 @@
 			.page-index {
 				.entry-list .section {
 					margin-bottom: -45px;
+					display: -webkit-flex;/*--- safari（PC）用 ---*/
 					display: flex;
 					display:-ms-flexbox;/*--- IE10 ---*/
-					display: -webkit-flex;/*--- safari（PC）用 ---*/
-					flex-direction: column-reverse;
 					-webkit-flex-direction: column-reverse;
+					flex-direction: column-reverse;
 				}
 				.entry-list .section:after {
 					content: " ";
@@ -36,11 +36,11 @@
 					min-height: 28px;
 				}
 				.entry-body {
+					display: -webkit-flex;/*--- safari（PC）用 ---*/
 					display: flex;
 					display:-ms-flexbox;/*--- IE10 ---*/
-					display: -webkit-flex;/*--- safari（PC）用 ---*/
-					flex-direction: row-reverse;
 					-webkit-flex-direction: row-reverse;
+					flex-direction: row-reverse;
 					width: auto;
 				}
 				.thumb {
